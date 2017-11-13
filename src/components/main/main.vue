@@ -1,23 +1,24 @@
 <template>
-    <div class="main">
+  <div class="main">
 
-      <router-view></router-view>
+    <router-view></router-view>
 
-      <div class="footer">
-        <div class="nav">
-          <div class="nav-item" v-for="nav in navs">
-            <router-link :to="nav.linkUrl">
-              <span class="icon iconfont" :class="nav.icon"></span>
-              <span class="text">{{nav.navName}}</span>
-            </router-link>
-          </div>
+    <div class="footer">
+      <div class="nav">
+        <div class="nav-item" v-for="nav in navs">
+          <router-link :to="nav.linkUrl">
+            <span class="icon iconfont" :class="nav.icon"></span>
+            <span class="text">{{nav.navName}}</span>
+          </router-link>
         </div>
       </div>
     </div>
+  </div>
 </template>
 
 <script type="text/ecmascript-6">
-  import {getNavList} from 'api/nav'
+
+  import {options, PROJECT_URL, ERR_OK} from 'api/config'
 
   export default {
     data() {
@@ -30,7 +31,13 @@
     },
     methods: {
       _getNavList() {
-        this.navs = getNavList()
+        const url = PROJECT_URL.concat('/api/nav/list')
+        const params = {}
+        this.$http.get(url, params, options).then((res) => {
+          if (res.body.code === ERR_OK) {
+            this.navs = res.body.data
+          }
+        })
       }
     }
   }

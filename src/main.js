@@ -2,11 +2,13 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store'
+import VueResource from 'vue-resource'
 import fastclick from 'fastclick'
 import 'common/stylus/index.styl'
 import {loadUserInfo} from 'common/js/cache'
 
 fastclick.attach(document.body)
+Vue.use(VueResource)
 // 权限校验
 router.beforeEach((to, from, next) => {
   if (to.matched.some(record => record.meta.requiresAuth)) {
