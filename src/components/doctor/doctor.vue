@@ -1,7 +1,7 @@
 <template>
   <div class="doctor">
     <h2 class="title">医师列表</h2>
-    <Scroll class="doctor-wrapper" click="true" :data="doctorList">
+    <Scroll class="doctor-wrapper" :click="click" :data="doctorList">
       <div class="doctor-content">
         <div class="item" v-for="doctor in doctorList">
           <div class="item-l">
@@ -25,7 +25,8 @@
   export default {
     data() {
       return {
-        doctorList: []
+        doctorList: [],
+        click: true
       }
     },
     created() {
