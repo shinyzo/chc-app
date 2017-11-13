@@ -10,4 +10,3 @@ export function saveUser(user) {
 export function loadUserInfo() {
   return storage.get(USER_KEY, {})
 }
-

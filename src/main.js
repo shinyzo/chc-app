@@ -4,15 +4,14 @@ import router from './router'
 import store from './store'
 import fastclick from 'fastclick'
 import 'common/stylus/index.styl'
-
 import {loadUserInfo} from 'common/js/cache'
 
 fastclick.attach(document.body)
-
+// 权限校验
 router.beforeEach((to, from, next) => {
   if (to.matched.some(record => record.meta.requiresAuth)) {
     const user = loadUserInfo()
-    if (!user.token) {
+    if (!user || !user.token) {
       console.log('【用户鉴权】-未登录过，跳转至登录页面')
       next({
         path: '/login'
@@ -24,7 +23,6 @@ router.beforeEach((to, from, next) => {
     next() // make sure to always call next()!
   }
 })
-
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

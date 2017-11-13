@@ -10,4 +10,3 @@ export function login(loginName, loginPass, verCode) {
 
   return jsonp(url, data, options)
 }
-

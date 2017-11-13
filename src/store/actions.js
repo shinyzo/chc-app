@@ -5,4 +5,3 @@ export const setUserInfo = function ({commit}, user) {
   saveUser(user)
   commit(types.SET_USERINFO, user)
 }
-

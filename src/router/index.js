@@ -6,6 +6,7 @@ Vue.use(Router)
 const Login = () => import('components/login/login')
 const Main = () => import('components/main/main')
 const Index = () => import('components/index/index')
+const Doctor = () => import('components/doctor/doctor')
 const Order = () => import('components/order/order')
 const UserCenter = () => import('components/user-center/user-center')
 
@@ -13,31 +14,32 @@ export default new Router({
   linkActiveClass: 'active',
   routes: [
     {
-      path: '/',
+      path: '/login',
       name: 'login',
       component: Login
     },
     {
-      path: '/login',
-      name: 'loginview',
-      component: Login
-    },
-    {
-      path: '/main',
+      path: '/',
       name: 'main',
-      meta: {requiresAuth: true},
       component: Main,
       children: [
         {
           path: '/index',
           name: 'index',
-          meta: {requiresAuth: true},
           component: Index
+        },
+        {
+          path: '/doctor',
+          name: 'doctor',
+          component: Doctor
         },
         {
           path: '/order',
           name: 'order',
-          component: Order
+          component: Order,
+          meta: {
+            requiresAuth: true
+          }
         },
         {
           path: '/user',
