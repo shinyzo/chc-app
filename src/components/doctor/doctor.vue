@@ -1,7 +1,7 @@
 <template>
   <div class="doctor">
     <h2 class="title">医师列表</h2>
-    <Scroll class="doctor-wrapper" :data="doctorList">
+    <Scroll class="doctor-wrapper" click="true" :data="doctorList">
       <div class="doctor-content">
         <div class="item" v-for="doctor in doctorList">
           <div class="item-l">
@@ -13,8 +13,6 @@
           </div>
         </div>
       </div>
-
-
     </Scroll>
 
 
@@ -46,6 +44,11 @@
   @import '~common/stylus/mixin.styl'
   .doctor
     .title
+      position: fixed
+      left: 0
+      top: 0
+      z-index: 40
+      width: 100%
       height: 40px
       line-height: 40px
       background: $color-theme
@@ -63,6 +66,9 @@
         .item-l
           flex: 0 0 120px
           width: 120px
+          .name
+            color: $color-text
+            font-size:$font14
 
 
 </style>
