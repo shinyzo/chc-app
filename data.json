@@ -1,0 +1,105 @@
+{
+  "navs": [
+    {
+      "navId": "A0001",
+      "navName": "首页",
+      "icon": "icon-shouye",
+      "linkUrl": "/index",
+      "sort": 1
+    },
+    {
+      "navId": "A0002",
+      "navName": "预约",
+      "icon": "icon-biaoxing",
+      "linkUrl": "/doctor",
+      "sort": 2
+    },
+    {
+      "navId": "A0003",
+      "navName": "订单",
+      "icon": "icon-dingdan",
+      "linkUrl": "/order",
+      "sort": 3
+    },
+    {
+      "navId": "A0004",
+      "navName": "个人中心",
+      "icon": "icon-",
+      "linkUrl": "/user",
+      "sort": 4
+    }
+  ],
+  "doctors": [
+    {
+      "doctorId": "A00001",
+      "doctorName": "林医生",
+      "avatar": "default.png",
+      "workHospital": "海南省人民医院",
+      "birthday": "1987-**-**",
+      "workAge": "4",
+      "sex": "男",
+      "level": "主任"
+    },
+    {
+      "doctorId": "A00001",
+      "doctorName": "林医生",
+      "avatar": "default.png",
+      "workHospital": "海南省人民医院",
+      "birthday": "1987-**-**",
+      "workAge": "4",
+      "sex": "男",
+      "level": "主任"
+    },
+    {
+      "doctorId": "A00001",
+      "doctorName": "林医生",
+      "avatar": "default.png",
+      "workHospital": "海南省人民医院",
+      "birthday": "1987-**-**",
+      "workAge": "4",
+      "sex": "男",
+      "level": "主任"
+    },
+    {
+      "doctorId": "A00001",
+      "doctorName": "林医生",
+      "avatar": "default.png",
+      "workHospital": "海南省人民医院",
+      "birthday": "1987-**-**",
+      "workAge": "4",
+      "sex": "男",
+      "level": "主任"
+    },
+    {
+      "doctorId": "A00001",
+      "doctorName": "林医生",
+      "avatar": "default.png",
+      "workHospital": "海南省人民医院",
+      "birthday": "1987-**-**",
+      "workAge": "4",
+      "sex": "男",
+      "level": "主任"
+    },
+    {
+      "doctorId": "A00001",
+      "doctorName": "林医生",
+      "avatar": "default.png",
+      "workHospital": "海南省人民医院",
+      "birthday": "1987-**-**",
+      "workAge": "4",
+      "sex": "男",
+      "level": "主任"
+    },
+    {
+      "doctorId": "A00001",
+      "doctorName": "林医生",
+      "avatar": "default.png",
+      "workHospital": "海南省人民医院",
+      "birthday": "1987-**-**",
+      "workAge": "4",
+      "sex": "男",
+      "level": "主任"
+    }
+
+  ]
+}

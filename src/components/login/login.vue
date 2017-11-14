@@ -9,11 +9,11 @@
         <div class="logo">
           <img src="../../common/image/logo.png">
         </div>
-        <div class="login-item" >
+        <div class="login-item">
           <span><input class="input" type="text" placeholder="用户名/手机号码/邮箱" v-model="loginName"></span>
         </div>
 
-        <div class="login-item" >
+        <div class="login-item">
           <span><input type="password" class="input" placeholder="密码" v-model="loginPass"></span>
         </div>
 
@@ -44,7 +44,7 @@
   import {mapActions} from 'vuex'
   import User from 'common/js/user'
   import {login} from 'api/user'
-  import {ERR_OK} from 'api/config'
+  import {errCode} from 'api/config'
 
   export default {
     data() {
@@ -58,10 +58,13 @@
     },
     methods: {
       login() {
-        login(this.loginName, this.loginPass, this.verCode).then((res) => {
-          if (res.code === ERR_OK) {
+        const params = {
+          loginName: this.loginName,
+          loginPass: this.loginPass
+        }
+        login(params).then((res) => {
+          if (res.code === errCode.SUCCESS) {
             this.user = res.data
-            console.log(this.user)
             const userinfo = new User(this.user)
             this.setUserInfo(userinfo)
           }
@@ -84,12 +87,12 @@
   @import '~common/stylus/mixin.styl'
 
   .login
-    opacity :1
+    opacity: 1
     &.pop-enter-active, &.pop-leave-active
       transition: all 0.4s
     &.pop-enter, &.pop-leave-to
       transform: translate3d(0, 100%, 0)
-      opacity :0
+      opacity: 0
     .login-header
       width: 100%
       height: 40px
@@ -128,7 +131,7 @@
           height: 35px
           line-height: 35px
           color: $color-text
-          border-1px(rgba(7,17,27,0.1))
+          border-1px(rgba(7, 17, 27, 0.1))
       .login-item-btn
         margin-top: 20px
         width: 100%

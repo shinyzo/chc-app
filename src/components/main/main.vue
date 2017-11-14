@@ -17,8 +17,8 @@
 </template>
 
 <script type="text/ecmascript-6">
-
-  import {options, PROJECT_URL, ERR_OK} from 'api/config'
+  import {errCode} from 'api/config'
+  import {getNavList} from 'api/nav'
 
   export default {
     data() {
@@ -31,13 +31,14 @@
     },
     methods: {
       _getNavList() {
-        const url = PROJECT_URL.concat('/api/nav/list')
-        const params = {}
-        this.$http.get(url, params, options).then((res) => {
-          if (res.body.code === ERR_OK) {
+        getNavList().then((res) => {
+          if (res.body.code === errCode.SUCCESS) {
             this.navs = res.body.data
           }
         })
+//        getNavListJp().then((res) => {
+//          console.log(res)
+//        })
       }
     }
   }

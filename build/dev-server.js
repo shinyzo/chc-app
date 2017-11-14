@@ -23,6 +23,26 @@ const proxyTable = config.dev.proxyTable
 
 const app = express()
 
+var appData = require('../data.json');
+var navs = appData.navs;
+var doctors = appData.doctors;
+
+var apiRoutes = express.Router();
+apiRoutes.get('/nav/list', function (req, res) {
+  res.json({
+    code: '0',
+    msg:'成功',
+    data: navs
+  })
+});
+apiRoutes.get('/doctor/list', function (req, res) {
+  res.json({
+    code: '0',
+    msg:'成功',
+    data: doctors
+  })
+});
+app.use('/api', apiRoutes);
 
 const compiler = webpack(webpackConfig)
 
