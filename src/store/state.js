@@ -1,6 +1,8 @@
+import {loadFavorite} from '../common/js/cache'
 // 定义对象类型
 const state = {
-  user: {}
+  user: {},
+  favoriteDoctors: loadFavorite()
 }
 
 export default state

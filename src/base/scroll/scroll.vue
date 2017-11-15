@@ -58,7 +58,7 @@
         this.scroll = new BScroll(this.$refs.wrapper, {
           probeType: this.probeType,
           click: this.click,
-          eventPassthrough: this.direction === DIRECTION_V ? DIRECTION_V : DIRECTION_H
+          eventPassthrough: this.direction === DIRECTION_V ? DIRECTION_H : DIRECTION_V
         })
 
         if (this.listenScroll) {

@@ -29,6 +29,8 @@
     created() {
       this._getNavList()
     },
+    computed: {
+    },
     methods: {
       _getNavList() {
         getNavList().then((res) => {
@@ -49,7 +51,7 @@
     position: fixed
     left: 0
     bottom: 0
-    z-index: 40
+    z-index: 100
     width: 100%
     height: 48px
     .nav

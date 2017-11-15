@@ -3,6 +3,9 @@ import * as types from './mutation-types'
 const mutations = {
   [types.SET_USERINFO](state, user) {
     state.user = user
+  },
+  [types.SET_FAVORITE_DOCTORS](state, favoriteList) {
+    state.favoriteDoctors = favoriteList
   }
 }
 
