@@ -7,6 +7,7 @@ const Login = () => import('components/login/login')
 const Main = () => import('components/main/main')
 const Index = () => import('components/index/index')
 const Doctor = () => import('components/doctor/doctor')
+const DoctorDetail = () => import('components/doctor-detail/doctor-detail')
 const Order = () => import('components/order/order')
 const UserCenter = () => import('components/user-center/user-center')
 
@@ -31,7 +32,13 @@ export default new Router({
         {
           path: '/doctor',
           name: 'doctor',
-          component: Doctor
+          component: Doctor,
+          children: [
+            {
+              path: ':id',
+              component: DoctorDetail
+            }
+          ]
         },
         {
           path: '/order',

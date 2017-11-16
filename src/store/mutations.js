@@ -5,7 +5,13 @@ const mutations = {
     state.user = user
   },
   [types.SET_FAVORITE_DOCTORS](state, favoriteList) {
-    state.favoriteDoctors = favoriteList
+    state.favoriteList = favoriteList
+  },
+  [types.SET_RESERVE_DOCTORS](state, reserveList) {
+    state.reserveList = reserveList
+  },
+  [types.SET_CURRENT_DOCTOR](state, doctor) {
+    state.doctor = doctor
   }
 }
 

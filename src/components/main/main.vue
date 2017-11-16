@@ -1,7 +1,8 @@
 <template>
   <div class="main">
-
-    <router-view></router-view>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
 
     <div class="footer">
       <div class="nav">

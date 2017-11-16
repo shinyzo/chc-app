@@ -2,6 +2,8 @@ import storage from 'good-storage'
 
 const USER_KEY = '__user__'
 const FAVORITE_KEY = '__favorite__'
+const RESERVE_KEY = '__reserve__'
+
 // 无限制
 const FAVORITE_MAX_LEN = -1
 
@@ -27,6 +29,35 @@ export function saveFavorite(doctor) {
 
 export function loadFavorite() {
   return storage.get(FAVORITE_KEY, [])
+}
+// 我的预约
+export function saveReserve(doctor) {
+  let reserves = storage.get(RESERVE_KEY, [])
+  let index = reserves.findIndex((item) => {
+    return item.doctorId === doctor.doctorId
+  })
+  if (index > -1) {
+    return
+  }
+  reserves.push(doctor)
+  storage.set(RESERVE_KEY, reserves)
+  return reserves
+}
+
+export function loadReserve() {
+  return storage.get(RESERVE_KEY, [])
+}
+
+export function cancelReserve(doctor) {
+  let reserves = storage.get(RESERVE_KEY, [])
+  let index = reserves.findIndex((item) => {
+    return item.doctorId === doctor.doctorId
+  })
+  if (index > -1) {
+    reserves.splice(index, 1)
+  }
+  storage.set(RESERVE_KEY, reserves)
+  return reserves
 }
 
 /**
