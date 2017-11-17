@@ -3,12 +3,19 @@ import App from './App'
 import router from './router'
 import store from './store'
 import VueResource from 'vue-resource'
+import VueLazyload from 'vue-lazyload'
 import fastclick from 'fastclick'
 import 'common/stylus/index.styl'
 import {loadUserInfo} from 'common/js/cache'
 
+/* eslint-disable no-unused-vars */
+// import vConsole from 'vconsole'
+
 fastclick.attach(document.body)
 Vue.use(VueResource)
+Vue.use(VueLazyload, {
+  loading: require('common/image/default.png')
+})
 // 权限校验
 router.beforeEach((to, from, next) => {
   if (to.matched.some(record => record.meta.requiresAuth)) {

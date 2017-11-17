@@ -105,10 +105,10 @@
         padding-left: 10px
         font-size: $font16
         color: $color-text-sub
-        height: 40px
-        lline-height: 40px
         float: left
         font-weight: 700
+        width: 40px
+        padding-top: 10px
       .register
         text-align: right
         float: right
@@ -145,7 +145,7 @@
           background: $color-theme
           border: none
           color: #ffffff
-          border-radius: 5px
+          border-radius: 6px
       .login-item-text
         margin-top: 15px
         height: 20px

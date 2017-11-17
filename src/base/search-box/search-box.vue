@@ -1,8 +1,8 @@
 <template>
   <div class="search-box">
-    <i class="icon-search"></i>
+    <i class="iconfont icon-sousuoleimu"></i>
     <input ref="query" v-model="query" class="box" :placeholder="placeholder"/>
-    <i @click="clear" v-show="query" class="icon-dismiss"></i>
+    <i @click="clear" v-show="query"  class="iconfont icon-guanbi1 close"></i>
   </div>
 </template>
 
@@ -45,27 +45,25 @@
 
   .search-box
     display: flex
-    align-items: center
-    box-sizing: border-box
-    width: 100%
-    padding: 0 6px
-    height: 40px
-    background: $color-highlight-background
-    border-radius: 6px
-    .icon-search
-      font-size: 24px
-      color: $color-background
+    padding: 5px 6px
+    .iconfont
+      flex: 0 0 35px
+      width: 35px
+      font-size: 30px
+      color: $color-white
     .box
       flex: 1
-      margin: 0 5px
-      line-height: 18px
-      background: $color-highlight-background
-      color: $color-text
-      font-size: $font-size-medium
+      height: 30px
+      line-height: 24px
+      background: #fff
+      border-radius: 14px
+      padding-left: 10px
+      color: $color-text-sub
+      text-align: center
       outline: 0
-      &::placeholder
-        color: $color-text-d
-    .icon-dismiss
-      font-size: 16px
-      color: $color-background
+    .close
+      font-size: 24px
+      color: #fff
+      margin-top: 3px
+      margin-left: 3px
 </style>

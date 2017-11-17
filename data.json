@@ -16,7 +16,7 @@
     },
     {
       "navId": "A0003",
-      "navName": "订单",
+      "navName": "我的订单",
       "icon": "icon-dingdan",
       "linkUrl": "/order",
       "sort": 3
@@ -108,5 +108,27 @@
       "subject":"妇科"
     }
 
+  ],
+  "banners":[
+    {
+      "bannerId":"B00001",
+      "linkUrl":"http://img.alicdn.com/tps/i4/TB10l5GclDH8KJjSspnSuvNAVXa.jpg_760x760Q50s50.jpg_.webp",
+      "picUrl":"http://img.alicdn.com/tps/i4/TB10l5GclDH8KJjSspnSuvNAVXa.jpg_760x760Q50s50.jpg_.webp"
+    },
+    {
+      "bannerId":"B00001",
+      "linkUrl":"http://img.alicdn.com/tps/i4/TB10l5GclDH8KJjSspnSuvNAVXa.jpg_760x760Q50s50.jpg_.webp",
+      "picUrl":"../../common/image/banner_1.png"
+    },
+    {
+      "bannerId":"B00001",
+      "linkUrl":"http://img.alicdn.com/tps/i4/TB10l5GclDH8KJjSspnSuvNAVXa.jpg_760x760Q50s50.jpg_.webp",
+      "picUrl":"../../common/image/banner_2.png"
+    },
+    {
+      "bannerId":"B00001",
+      "linkUrl":"http://img.alicdn.com/tps/i4/TB10l5GclDH8KJjSspnSuvNAVXa.jpg_760x760Q50s50.jpg_.webp",
+      "picUrl":"http://img.alicdn.com/tps/i4/TB10l5GclDH8KJjSspnSuvNAVXa.jpg_760x760Q50s50.jpg_.webp"
+    }
   ]
 }

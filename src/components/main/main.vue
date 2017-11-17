@@ -48,6 +48,7 @@
 </script>
 <style lang="stylus" rel="stylesheet/stylus">
   @import "~common/stylus/mixin.styl"
+  @import '~common/stylus/variable.styl'
   .footer
     position: fixed
     left: 0
@@ -79,5 +80,5 @@
           display: block
           color: rgb(77, 85, 93)
           &.active
-            color: rgb(0, 160, 220)
+            color: $color-theme
 </style>

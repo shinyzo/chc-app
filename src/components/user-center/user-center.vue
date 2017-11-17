@@ -31,7 +31,7 @@
           <span class="num">0</span>
         </div>
         <div class="menu-item">
-          <span class="iconfont icon-shouye"></span>
+          <span class="iconfont icon-taojinbi"></span>
           <span class="name">我的积分</span>
           <span class="num">0</span>
         </div>
@@ -40,12 +40,12 @@
     <div class="shortcut-wrapper">
       <div class="shortcut-content">
         <div class="item">
-          <span class="iconfont icon-xihuan"></span>
-          <span class="txt">我的足迹</span>
+          <span class="iconfont icon-wuliu"></span>
+          <span class="txt">我的物流</span>
         </div>
         <div class="item">
           <span class="iconfont icon-zuobiao"></span>
-          <span class="txt">我的足迹</span>
+          <span class="txt">我的坐标</span>
         </div>
         <div class="item">
           <span class="iconfont icon-zuji"></span>
@@ -55,29 +55,29 @@
       <div class="shortcut-content">
         <div class="item">
           <span class="iconfont icon-xihuan"></span>
-          <span class="txt">我的足迹</span>
+          <span class="txt">我的关注</span>
         </div>
         <div class="item">
           <span class="iconfont icon-tongzhi"></span>
-          <span class="txt">我的足迹</span>
+          <span class="txt">我的消息</span>
         </div>
         <div class="item">
-          <span class="iconfont icon-xihuan"></span>
-          <span class="txt">我的足迹</span>
+          <span class="iconfont icon-shezhi"></span>
+          <span class="txt">我的设置</span>
         </div>
       </div>
       <div class="shortcut-content">
         <div class="item">
           <span class="iconfont icon-xihuan"></span>
-          <span class="txt">我的足迹</span>
+          <span class="txt">敬请期待</span>
         </div>
         <div class="item">
           <span class="iconfont icon-xihuan"></span>
-          <span class="txt">我的足迹</span>
+          <span class="txt">敬请期待</span>
         </div>
         <div class="item">
           <span class="iconfont icon-xihuan"></span>
-          <span class="txt">我的足迹</span>
+          <span class="txt">敬请期待</span>
         </div>
       </div>
     </div>
