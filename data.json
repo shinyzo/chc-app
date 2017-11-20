@@ -39,7 +39,7 @@
       "workAge": "4",
       "sex": "男",
       "level": "主任",
-      "subject":"妇科"
+      "subject": "妇科"
     },
     {
       "doctorId": "A00002",
@@ -50,7 +50,7 @@
       "workAge": "4",
       "sex": "男",
       "level": "主任",
-      "subject":"妇科"
+      "subject": "妇科"
     },
     {
       "doctorId": "A00003",
@@ -61,7 +61,7 @@
       "workAge": "4",
       "sex": "男",
       "level": "主任",
-      "subject":"妇科"
+      "subject": "妇科"
     },
     {
       "doctorId": "A00004",
@@ -72,7 +72,7 @@
       "workAge": "4",
       "sex": "男",
       "level": "主任",
-      "subject":"妇科"
+      "subject": "妇科"
     },
     {
       "doctorId": "A00005",
@@ -83,7 +83,7 @@
       "workAge": "4",
       "sex": "男",
       "level": "主任",
-      "subject":"妇科"
+      "subject": "妇科"
     },
     {
       "doctorId": "A00006",
@@ -94,7 +94,7 @@
       "workAge": "4",
       "sex": "男",
       "level": "主任",
-      "subject":"妇科"
+      "subject": "妇科"
     },
     {
       "doctorId": "A00007",
@@ -105,30 +105,63 @@
       "workAge": "4",
       "sex": "男",
       "level": "主任",
-      "subject":"妇科"
+      "subject": "妇科"
     }
-
   ],
-  "banners":[
+  "banners": [
     {
-      "bannerId":"B00001",
-      "linkUrl":"http://img.alicdn.com/tps/i4/TB10l5GclDH8KJjSspnSuvNAVXa.jpg_760x760Q50s50.jpg_.webp",
-      "picUrl":"http://img.alicdn.com/tps/i4/TB10l5GclDH8KJjSspnSuvNAVXa.jpg_760x760Q50s50.jpg_.webp"
+      "bannerId": "B00001",
+      "linkUrl": "http://img.alicdn.com/tps/i4/TB10l5GclDH8KJjSspnSuvNAVXa.jpg_760x760Q50s50.jpg_.webp",
+      "picUrl": "http://img.alicdn.com/tps/i4/TB10l5GclDH8KJjSspnSuvNAVXa.jpg_760x760Q50s50.jpg_.webp"
     },
     {
-      "bannerId":"B00001",
-      "linkUrl":"http://img.alicdn.com/tps/i4/TB10l5GclDH8KJjSspnSuvNAVXa.jpg_760x760Q50s50.jpg_.webp",
-      "picUrl":"../../common/image/banner_1.png"
+      "bannerId": "B00001",
+      "linkUrl": "http://img.alicdn.com/tps/i4/TB10l5GclDH8KJjSspnSuvNAVXa.jpg_760x760Q50s50.jpg_.webp",
+      "picUrl": "../../common/image/banner_1.png"
     },
     {
-      "bannerId":"B00001",
-      "linkUrl":"http://img.alicdn.com/tps/i4/TB10l5GclDH8KJjSspnSuvNAVXa.jpg_760x760Q50s50.jpg_.webp",
-      "picUrl":"../../common/image/banner_2.png"
+      "bannerId": "B00001",
+      "linkUrl": "http://img.alicdn.com/tps/i4/TB10l5GclDH8KJjSspnSuvNAVXa.jpg_760x760Q50s50.jpg_.webp",
+      "picUrl": "../../common/image/banner_2.png"
     },
     {
-      "bannerId":"B00001",
-      "linkUrl":"http://img.alicdn.com/tps/i4/TB10l5GclDH8KJjSspnSuvNAVXa.jpg_760x760Q50s50.jpg_.webp",
-      "picUrl":"http://img.alicdn.com/tps/i4/TB10l5GclDH8KJjSspnSuvNAVXa.jpg_760x760Q50s50.jpg_.webp"
+      "bannerId": "B00001",
+      "linkUrl": "http://img.alicdn.com/tps/i4/TB10l5GclDH8KJjSspnSuvNAVXa.jpg_760x760Q50s50.jpg_.webp",
+      "picUrl": "http://img.alicdn.com/tps/i4/TB10l5GclDH8KJjSspnSuvNAVXa.jpg_760x760Q50s50.jpg_.webp"
+    }
+  ],
+  "activitys": [
+    {
+      "activityId": "A9900001",
+      "activityType": 1,
+      "title": "中关村创业大街受邀参加中挪商业峰会...",
+      "activityPic": "",
+      "linkUrl": "",
+      "desc": "4月21日， 中关村知识产权帮扶计划启动暨走进创业大街专场在全球创新社区成功举办，此次活动是为帮助相关企业和服..."
+    },
+    {
+      "activityId": "A9900001",
+      "activityType": 1,
+      "title": "中关村创业大街受邀参加中挪商业峰会...",
+      "activityPic": "",
+      "linkUrl": "",
+      "desc": "4月21日， 中关村知识产权帮扶计划启动暨走进创业大街专场在全球创新社区成功举办，此次活动是为帮助相关企业和服..."
+    },
+    {
+      "activityId": "A9900001",
+      "activityType": 1,
+      "title": "中关村创业大街受邀参加中挪商业峰会...",
+      "activityPic": "",
+      "linkUrl": "",
+      "desc": "4月21日， 中关村知识产权帮扶计划启动暨走进创业大街专场在全球创新社区成功举办，此次活动是为帮助相关企业和服..."
+    },
+    {
+      "activityId": "A9900001",
+      "activityType": 1,
+      "title": "中关村创业大街受邀参加中挪商业峰会...",
+      "activityPic": "",
+      "linkUrl": "",
+      "desc": "4月21日， 中关村知识产权帮扶计划启动暨走进创业大街专场在全球创新社区成功举办，此次活动是为帮助相关企业和服..."
     }
   ]
 }

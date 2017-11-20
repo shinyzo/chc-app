@@ -27,6 +27,7 @@ var appData = require('../data.json');
 var navs = appData.navs;
 var doctors = appData.doctors;
 var banners = appData.banners;
+var activitys = appData.activitys;
 
 var apiRoutes = express.Router();
 apiRoutes.get('/nav/list', function (req, res) {
@@ -48,6 +49,13 @@ apiRoutes.get('/banner/list', function (req, res) {
     code: '0',
     msg:'成功',
     data: banners
+  })
+});
+apiRoutes.get('/activity/list', function (req, res) {
+  res.json({
+    code: '0',
+    msg:'成功',
+    data: activitys
   })
 });
 app.use('/api', apiRoutes);

@@ -16,6 +16,7 @@ Vue.use(VueResource)
 Vue.use(VueLazyload, {
   loading: require('common/image/default.png')
 })
+
 // 权限校验
 router.beforeEach((to, from, next) => {
   if (to.matched.some(record => record.meta.requiresAuth)) {

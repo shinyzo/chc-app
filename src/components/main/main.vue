@@ -27,11 +27,11 @@
         navs: []
       }
     },
+    monuted: {},
     created() {
       this._getNavList()
     },
-    computed: {
-    },
+    computed: {},
     methods: {
       _getNavList() {
         getNavList().then((res) => {

@@ -230,10 +230,10 @@
           position: relative
           flex: 1
           margin-left: 5px
-          margin-top: 15px
+          margin-top: 10px
           .top
-            height: 40px
-            line-height: 40px
+            line-height: 30px
+            height: 30px
             .name
               font-size: $font14
               color: $color-text
@@ -246,8 +246,8 @@
               font-size: $font12
               color: $color-text-sub
           .work
-            height: 25px
-            line-height 25px
+            height: 22px
+            line-height 22px
             color: $color-text-sub
             margin-top: 5px
             margin-left: 10px
@@ -257,8 +257,8 @@
               margin-left: 10px
               font-size: $font12
           .desc
-            height: 25px
-            line-height 25px
+            height: 22px
+            line-height 22px
             color: $color-text-sub
             .txt, .workage
               margin-left: 10px

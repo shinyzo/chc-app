@@ -9,13 +9,15 @@ export const api = {
     login: '/api/user/login',
     nav: '/api/nav/list',
     doctor: '/api/doctor/list',
-    banner: '/api/banner/list'
+    banner: '/api/banner/list',
+    activity: 'api/activity/list'
   },
   dev: {
     login: `${PROJECT_URL}/api/user/login`,
     nav: `${PROJECT_URL}/api/nav/list`,
     doctor: `${PROJECT_URL}/api/nav/list`,
-    banner: `${PROJECT_URL}/api/banner/list`
+    banner: `${PROJECT_URL}/api/banner/list`,
+    activity: `${PROJECT_URL}/api/activity/list`
   }
 }
 /**
