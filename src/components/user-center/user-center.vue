@@ -101,7 +101,7 @@
     .user-wrapper
       position: relative
       height: 160px
-      background: orangered
+      background: rgba($color-theme, 0.5)
       .avatar-wrapper
         margin: auto
         position: absolute
@@ -181,8 +181,8 @@
         height: 82px
         .item
           flex: 1
-          border-right:1px solid $color-border
-          border-bottom:1px solid $color-border
+          border-right: 1px solid $color-border
+          border-bottom: 1px solid $color-border
           text-align: center
           span
             display: block
