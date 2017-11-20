@@ -117,12 +117,9 @@
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
     </scroll>
-
   </div>
 </template>
 <script type="text/ecmascript-6">
@@ -131,7 +128,6 @@
   import SearchBox from 'base/search-box/search-box'
   import Scroll from 'base/scroll/scroll'
   import Slider from 'base/slider/slider'
-
   export default {
     data() {
       return {

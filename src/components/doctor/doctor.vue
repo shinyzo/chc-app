@@ -223,7 +223,6 @@
           flex: 0 0 100px
           width: 100px
           img
-            margin: 0 auto
             text-align: center
             margin: 20px 0 0 10px
             border-radius: 50%
@@ -233,7 +232,7 @@
           margin-left: 5px
           margin-top: 15px
           .top
-            height：40px
+            height: 40px
             line-height: 40px
             .name
               font-size: $font14
@@ -287,7 +286,6 @@
               .txt
                 margin-left: 5px
                 font-size: $font12
-
     .loading-container
       position: absolute
       width: 100%
