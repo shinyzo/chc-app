@@ -1,3 +1,4 @@
+
 // 服务url
 export const PROJECT_URL = 'http://localhost:80/chcservice'
 /**
@@ -31,8 +32,9 @@ export const api = {
 export const commonParams = {
   version: '1.0.0',
   charset: 'utf-8',
-  apptype: 'h5',
-  appsource: '1',
+  appType: 'H5',
+  platType: 'P',
+  publicKey: 'q1w2e3r4t5y6u7i8o9p0',
   format: 'jsonp'
 }
 /**

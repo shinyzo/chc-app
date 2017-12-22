@@ -1,12 +1,15 @@
 import Vue from 'vue'
 import jsonp from 'common/js/jsonp'
 import {options, api, commonParams} from './config'
+import CryptoJS from 'crypto-js/core'
+import MD5 from 'crypto-js/md5'
 
 /**
  * 获取用户导航列表
  */
 export function getNavList(params) {
   const data = Object.assign({}, commonParams, params)
+  data['signData'] = data
   const url = api.native.nav
   return Vue.http.get(url, data, options)
 }
