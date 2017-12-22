@@ -1,8 +1,6 @@
 import Vue from 'vue'
 import jsonp from 'common/js/jsonp'
 import {options, api, commonParams} from './config'
-import CryptoJS from 'crypto-js/core'
-import MD5 from 'crypto-js/md5'
 
 /**
  * 获取用户导航列表
