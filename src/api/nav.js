@@ -7,7 +7,6 @@ import {options, api, commonParams} from './config'
  */
 export function getNavList(params) {
   const data = Object.assign({}, commonParams, params)
-  data['signData'] = data
   const url = api.native.nav
   return Vue.http.get(url, data, options)
 }
